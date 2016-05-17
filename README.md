@@ -3,7 +3,7 @@ Builds consul packages
 
 ## Requirements
 
-* FPM (sudo gem install fpm)
+* FPM (`sudo gem install fpm`)
 
 ## Usage
 
