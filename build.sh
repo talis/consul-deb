@@ -14,9 +14,10 @@ else
     VERSION=$1
 fi
 
-rm *.deb
+rm -rf *.deb
 
 wget -N "https://releases.hashicorp.com/consul/${VERSION}/consul_${VERSION}_linux_amd64.zip"
 unzip -o "consul_${VERSION}_linux_amd64.zip" -d usr/bin
 
 fpm -s dir -t deb -n consul -v $VERSION usr/bin/consul
+fpm -s dir -t rpm -n consul -v $VERSION usr/bin/consul
