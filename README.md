@@ -4,6 +4,7 @@ Builds consul packages
 ## Requirements
 
 * FPM (`sudo gem install fpm`)
+* rpm package (on Ubuntu)
 
 ## Usage
 
